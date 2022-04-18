@@ -1,0 +1,21 @@
+html{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+body{
+    align-items: center;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+}
+
+#time{
+    background-color: black;
+    color: white;
+    padding: 0.5em 0;
+    font-size: 2em;
+    font-family: system-ui, sans-serif;
+}
