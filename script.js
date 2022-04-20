@@ -1,6 +1,3 @@
-const Swal = require('sweetalert2')
-const moment = require('moment')
-
 window.addEventListener('DOMContentLoaded', () => {
 
     let title = document.querySelector('h1')
@@ -24,28 +21,30 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     window.addEventListener('scroll', (event) => {
-        event.preventDefault()
-        
+
         Swal.fire({
-            title: 'Don\'t look at this please',
+            title: 'Don\'t scroll !!! IT\'S PRIVATE !!!',
+            icon: 'error',
             showCancelButton: true,
-            icon: 'warning',
-            position: 'top-start',
-            showConfirmButton: false,
-            timer: 1500
+            cancelButtonText: 'Sorry',
+            showConfirmButton: true,
+            confirmButtonText: 'Sorry',
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#d33',
         })
     })
 
     setTimeout(() => {
         Swal.fire({
             title: 'Welcome ! Woops, I\'m late... 😅*',
-            showCancelButton: true,
+            showCancelButton: false,
+            showConfirmButton: false,
             icon: 'info',
             position: 'top',
-            showConfirmButton: false,
-            timer: 1500
+            timer: 1500,
+            timerProgressBar: 'true'
         })
-    }, 10000)
+    }, 5000)
 
     let time = document.querySelector('#time')
 
@@ -77,15 +76,17 @@ window.addEventListener('DOMContentLoaded', () => {
         event.preventDefault
     })
 
-    document.addEventListener('mousedown', (event) => {
-        event.preventDefault()
-    })
-
     document.addEventListener('selectstart', (event) => {
         event.preventDefault()
     })
 
     document.addEventListener('contextmenu', (event) => {
         event.preventDefault()
+    })
+
+    let youtubeVideo = document.querySelector('iframe')
+
+    youtubeVideo.addEventListener('play', () => {
+        youtubeVideo.requestFullscreen()
     })
 })
