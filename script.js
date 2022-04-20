@@ -1,3 +1,6 @@
+const Swal = require('sweetalert2')
+const moment = require('moment')
+
 window.addEventListener('DOMContentLoaded', () => {
 
     let title = document.querySelector('h1')
@@ -8,25 +11,21 @@ window.addEventListener('DOMContentLoaded', () => {
     changeTitleButton.addEventListener('click', () => {
         
         if (isTitleAwesome === false) {
+
             title.innerHTML = 'Awesome Final JS Project !'
             isTitleAwesome = true
+
         } else {
+
             title.innerHTML = oldTitle
             isTitleAwesome = false
+
         }
     })
 
-    // document.addEventListener('click', () => {
-    //     Swal.fire({
-    //         title: 'Stop clicking me like this !',
-    //         showCancelButton: true,
-    //         position: 'top-end',
-    //         showConfirmButton: false,
-    //         timer: 1500
-    //     })
-    // })
-
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', (event) => {
+        event.preventDefault()
+        
         Swal.fire({
             title: 'Don\'t look at this please',
             showCancelButton: true,
@@ -76,5 +75,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('mousedown', (event) => {
         event.preventDefault
+    })
+
+    document.addEventListener('mousedown', (event) => {
+        event.preventDefault()
+    })
+
+    document.addEventListener('selectstart', (event) => {
+        event.preventDefault()
+    })
+
+    document.addEventListener('contextmenu', (event) => {
+        event.preventDefault()
     })
 })

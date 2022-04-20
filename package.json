@@ -1,0 +1,25 @@
+{
+  "name": "s2jsfinal",
+  "version": "1.0.0",
+  "description": "This repository will be used to the development of the final exercise of vanilla JS of the year (2021-2022)",
+  "main": "moment.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainLAU/S2JSFinal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainLAU/S2JSFinal/issues"
+  },
+  "homepage": "https://github.com/RomainLAU/S2JSFinal#readme",
+  "dependencies": {
+    "moment": "^2.29.3",
+    "momentjs": "^2.0.0",
+    "sweetalert2": "^11.4.8"
+  }
+}
