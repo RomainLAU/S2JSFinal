@@ -72,21 +72,24 @@ window.addEventListener('DOMContentLoaded', () => {
         time.style.fontSize = '5em'
     })
 
-    document.addEventListener('mousedown', (event) => {
-        event.preventDefault
-    })
+    // document.addEventListener('mousedown', (event) => {
+    //     event.preventDefault
+    // })
 
-    document.addEventListener('selectstart', (event) => {
-        event.preventDefault()
-    })
+    // document.addEventListener('selectstart', (event) => {
+    //     event.preventDefault()
+    // })
 
-    document.addEventListener('contextmenu', (event) => {
-        event.preventDefault()
-    })
+    // document.addEventListener('contextmenu', (event) => {
+    //     event.preventDefault()
+    // })
 
-    let youtubeVideo = document.querySelector('iframe')
+    const youtubeVideo = document.querySelector('#youtubeVideo')
 
-    youtubeVideo.addEventListener('play', () => {
-        youtubeVideo.requestFullscreen()
+    console.log(youtubeVideo)
+
+    youtubeVideo.addEventListener('volumechange', (event) => {
+        console.log('aaa')
+        alert('aaa')
     })
 })
