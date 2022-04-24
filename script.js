@@ -113,14 +113,20 @@ window.addEventListener('DOMContentLoaded', () => {
         event.preventDefault()
     })
 
+    let videoPlayer = document.querySelector('video')
+
+    videoPlayer.addEventListener('play', () => {
+        document.body.style.backgroundColor = "grey"
+    })
+
+    videoPlayer.addEventListener('pause', () => {
+        document.body.style.backgroundColor = "white"
+    })
+
     let musicPlayer = document.querySelector('#audio')
 
     musicPlayer.addEventListener('timeupdate', () => {
         document.body.style.backgroundColor = "blue"
-    })
-    
-    musicPlayer.addEventListener('volumechange', (event) => {
-        alert('aaa')
     })
 
     musicPlayer.addEventListener('play', () => {

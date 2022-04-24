@@ -7,8 +7,8 @@
     <title>S2 JS Final</title>
     <link rel="stylesheet" href="assets/style/style.css">
     <script src="moment.min.js"></script>
-    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-    <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" type="module"></script>
 
 </head>
 <body>
@@ -18,7 +18,11 @@
         </div>
         <h1>S2 JS Final</h1>
         <button id="changeTitleButton">Change title</button>
-        <audio id="audio" controls src="Warriors.mp3"></audio>
+        <div id="time"></div>
+        <video controls width="250">
+            <source src="assets/videos/pythonProject-squares.mkv" type="video/webm">
+        </video>
+        <audio id="audio" controls src="assets/musics/Warriors.mp3"></audio>
         <input type="password" placeholder="Please enter your password, it will be kept secret, don't worry" id="password">
         <h4 id="displayPassword"></h4>
         <div id="chessplate">

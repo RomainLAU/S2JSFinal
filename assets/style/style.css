@@ -91,3 +91,15 @@ input[type=password]{
         transform: rotateZ(360deg);
     }
 }
+
+#chessplate{
+    width: 40em;
+    height: 40em;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+#chessplate > div{
+    border: solid 0px black;
+}
