@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     time.addEventListener('mouseleave', () => {
         time.style.fontSize = '2em'
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 1)
     })
 
     document.addEventListener('mousedown', (event) => {
